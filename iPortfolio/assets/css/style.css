@@ -208,7 +208,7 @@ h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
+  right: 20px;
   top: 15px;
   z-index: 9998;
   border: 0;
@@ -300,6 +300,10 @@ h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  #hero{
+    width:100%;
+    height: 350px;
   }
 }
 
