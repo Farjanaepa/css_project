@@ -285,7 +285,7 @@ a.btn:nth-child(2)::before{
 }
 .img-box img{
     width: 100%;
-    max-width: 350px;
+    max-width: 410px;
     height: auto;
 }
 
@@ -366,15 +366,15 @@ a.btn:nth-child(2)::before{
 }
 
 .info-about1{
-    left: 10%;
+    left: 5%;
     top: 34%;
 }
 .info-about2{
-    left: 60%;
+    left: 80%;
     top: 15%;
 }
 .info-about3{
-    left: 61%;
+    left: 71%;
     top: 70%;
 }
 
