@@ -644,6 +644,7 @@ a.btn:nth-child(2)::before{
     position: relative;
     border-radius: 15px;
     overflow: hidden;
+    height: 250px;
     background: #292e33;
     display: flex;
     grid-template-rows: 1fr auto;
