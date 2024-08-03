@@ -367,15 +367,15 @@
 
             <div class="container">
                 <div class="fillter-button">
-                    <button class="btn">ALL</button>
-                    <button class="btn">REACT</button>
-                    <button class="btn">LARAVEL</button>
-                    <button class="btn">VUE.JS</button>
+                    <button class="btn" data-filter="all">ALL</button>
+                    <button class="btn" data-filter=".react">REACT</button>
+                    <button class="btn" data-filter=".laravel">LARAVEL</button>
+                    <button class="btn" data-filter=".vue">VUE.JS</button>
                 </div>
 
 
                 <div class="portfolio-gallery">
-                    <div class="port-box">
+                    <div class="port-box mix react">
                         <div class="port-image">
                             <img src="img/portfolio/portfolio10.jpg" alt="">
                         </div>
@@ -391,7 +391,7 @@
                         </div>
                     </div>
 
-                    <div class="port-box">
+                    <div class="port-box mix laravel">
                         <div class="port-image">
                             <img src="img/portfolio/portfolio11.jpg" alt="">
                         </div>
@@ -408,7 +408,7 @@
                     </div>
 
 
-                    <div class="port-box">
+                    <div class="port-box mix react">
                         <div class="port-image">
                             <img src="img/portfolio/portfolio12.jpg" alt="">
                         </div>
@@ -425,7 +425,7 @@
                     </div>
 
 
-                    <div class="port-box">
+                    <div class="port-box mix laravel">
                         <div class="port-image">
                             <img src="img/portfolio/portfolio13.jpg" alt="">
                         </div>
@@ -443,7 +443,7 @@
 
 
 
-                    <div class="port-box">
+                    <div class="port-box mix vue">
                         <div class="port-image">
                             <img src="img/portfolio/portfolio-5.jpg" alt="">
                         </div>
@@ -461,7 +461,7 @@
 
 
                     
-                    <div class="port-box">
+                    <div class="port-box mix vue">
                         <div class="port-image">
                             <img src="img/portfolio/portfolio14.jpg" alt="">
                         </div>
@@ -482,7 +482,36 @@
             </div>
         </section>
 
+        <!-- contact section----------------------- -->
 
+        <section id="contact" class="contact">
+            <div class="main-text">
+                <span>Ask me Question</span>
+                <h2>Contact Me</h2>
+            </div>
+
+            <form action="#">
+
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Your Address">
+                <input type="number" placeholder="Phone Number">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+
+                <div class="btn-box formBtn">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+
+        </section>
+
+        <!-- footer website---------- -->
+         <footer>
+            <p>Copyright &copy; 2024 by Farjana Epa || All rights reserved by.</p>
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+         </footer>
+
+        <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
     
 </body>
