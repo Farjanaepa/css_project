@@ -725,6 +725,9 @@ section{
 
 
 /* portfolio section css--------------------------- */
+.portfolio{
+    background: var(--secon-bg-color);
+}
 
 .fillter-button{
     margin: 2rem;
@@ -828,6 +831,9 @@ section{
     font-size: 1.3rem;
     color: var(--secon-bg-color);
 }
+
+
+
 
 /* contact section css--------------------------------------------- */
 
