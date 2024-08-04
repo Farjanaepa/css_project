@@ -90,9 +90,13 @@ span{
 }
 
 .navlist a{
+    display: inline-block;
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 20px;
+    animation: slideAnimation 1s ease forwards;
+    animation-delay: calc(.3s* var(--i));
+    opacity: 0;
 }
 
 .navlist a:hover {
@@ -425,6 +429,74 @@ section{
 }
 
 
+/* 
+# Resume
+--------------------------------------------------------------*/ 
+ .section-title h2{
+    text-align: center;
+    color: var(--hover-color);
+}
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--hover-color);
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: var(--hover-color);
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: var(--secon-bg-color);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/*--------------------------------------------------------------
+
+
 /* service section css----------------------------- */
 
 .main-text{
@@ -659,7 +731,7 @@ section{
     text-align: center;
 }
 
-.fillter-button .btn{
+.fillter-button .button{
     background: none;
     outline: none;
     border: none;
@@ -671,7 +743,7 @@ section{
     color: var(--text-color);
 }
 
-.fillter-button .btn:hover{
+.fillter-button .button:hover{
     color: var(--hover-color);
 }
 
@@ -827,6 +899,34 @@ footer a i {
 
 
 
+/* parallax------------------------ */
+
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+
+
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 
 
 
@@ -937,6 +1037,18 @@ footer a i {
 }
 
 
+@keyframes slideAnimation{
+    0%{
+       opacity: 0;
+       transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 /* Break points */
 
@@ -1025,4 +1137,34 @@ footer a i {
         .fillter-button{
             margin: 2.5rem 0;
         }
+        footer p{
+            font-size: .8rem;
+        }
+}
+
+@media(max-width:420px){
+    html{
+        font-size: 80%;
+    }
+    footer p{
+        font-size: .6rem;
+    }
+    .fillter-button .button{
+        font-size: .8rem;
+    }
+    .img-about img{
+       
+        width: 300px;
+    }
+    /* .info-about1,.info-about2,.info-about3{
+        display: none;
+    } */
+
+    .img-about p{
+        font-size: 1rem;
+    }
+
+
+
+
 }
