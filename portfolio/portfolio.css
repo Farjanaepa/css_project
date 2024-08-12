@@ -49,7 +49,7 @@ main{
 }
 
 footer{
-    background-color: #492323;
+    background-color: #5d3f3f;
     color: var(--text-color);
     padding: var(--padding);
 }
