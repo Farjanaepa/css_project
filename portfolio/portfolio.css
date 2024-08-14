@@ -12,7 +12,7 @@ header{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    filter: saturate(0);
+    filter: saturate();
 }
 header:hover{
     filter: saturate(2);
