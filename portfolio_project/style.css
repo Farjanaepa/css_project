@@ -755,6 +755,9 @@ section{
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 2rem;
 }
+.bg{
+    background: var(--text-color);
+}
 .port-box{
     position: relative;
     border-radius: 15px;
