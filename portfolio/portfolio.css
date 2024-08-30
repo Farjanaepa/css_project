@@ -19,7 +19,11 @@ header:hover{
 
 }
 main{
+<<<<<<< HEAD
     background-color : #443c3c; ;
+=======
+    background-color : #3d3535; ;
+>>>>>>> dfea631236b51c251e8d41ccd699ca55c9dff75a
     color: var(--text-color);
     padding: var(--padding);
 }
