@@ -20,9 +20,7 @@ header:hover{
 }
 main{
 
-    background-color : #292727; ;
-
-
+    background-color : #322c2c;
     color: var(--text-color);
     padding: var(--padding);
 }
