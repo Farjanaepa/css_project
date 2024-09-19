@@ -20,13 +20,13 @@ header:hover{
 }
 main{
 
-<<<<<<< HEAD
+
     background-color : #322c2c;
-=======
-    background-color : #413939; ;
+
+    background-color : #333030; ;
 
 
->>>>>>> d62f43dea30216081bb5536456a92fecbc53e1e5
+
     color: var(--text-color);
     padding: var(--padding);
 }
