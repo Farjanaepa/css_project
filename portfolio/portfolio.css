@@ -16,7 +16,6 @@ header{
 }
 header:hover{
     filter: saturate(2);
-
 }
 main{
     background-color : #2a2727;
@@ -41,8 +40,6 @@ main{
     margin: 1rem;
     color: black;
     float: left;
-
-
 }
 .card:hover{
     box-shadow: 0.1rem 0.2rem 0.9rem rgba(243, 238, 238, 0.5);
