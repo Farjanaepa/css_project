@@ -18,13 +18,12 @@ header:hover{
     filter: saturate(2);
 }
 main{
-<<<<<<< HEAD
+
 
     background-color : #322d2d; ;
 
-=======
+
     background-color : #2a2727;
->>>>>>> b10df34bca37c17f871e00525bc8f0d94a2859bb
     color: var(--text-color);
     padding: var(--padding);
 }
