@@ -18,7 +18,7 @@ header:hover{
     filter: saturate(2);
 }
 main{
-    background-color : #2b2525; ;
+    background-color : #2b2525;
     color: var(--text-color);
     padding: var(--padding);
 }
