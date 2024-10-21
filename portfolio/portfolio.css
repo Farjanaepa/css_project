@@ -7,7 +7,7 @@
 }
 header{
     background-image: url(./pexels-chevanon-302899.jpg);
-    height: 100vh;
+    height: 100vh;   
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -18,7 +18,7 @@ header:hover{
     filter: saturate(2);
 }
 main{
-    background-color :#302b2b;
+    background-color :#2f2727;
     color: var(--text-color);
     padding: var(--padding);
 }
