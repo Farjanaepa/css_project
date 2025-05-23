@@ -6,26 +6,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
 
     
      <style>
     .navbar-custom {
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgb(238, 245, 244);
       backdrop-filter: blur(10px);
     }
     .nav-item{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    main{
-        background-color: rgb(238, 245, 244);
-    }
+   
     img {
     border-radius: 0; 
     transition: border-radius 0.3s ease;
   }
   .fixed-img {
-    height: 200px;         /* You can change this value */
+    height: 200px;       
     object-fit: cover;
     
    
@@ -79,198 +79,169 @@
   
   }
 
-  body {
-        
-            background-color: rgb(238, 245, 244);
-        }
+body{
+  background-color:  rgb(238, 245, 244);
+}
 
-        .footer {
-            background-color: #090a09;
+        .footer{
+           
             margin-top: 40px;
-            color: #fff;
+           background-color: rgb(12, 21, 15);
+           font-family: sans-serif;
+           text-decoration: none;
+           
         }
+        .footer h1{
+          color: rgb(14, 138, 66);
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+      a{
+        text-decoration: none;
+        color: azure;
+          
+        }
+       
+        
 
-        .footer-content h2 {
-            color: #fff;
-        }
 
-        .footer-content h5,
-        .footer-content p,
-        .footer-links a {
-            color: #fff;
-        }
+        .footer a:hover {
+    text-decoration: underline;
+    color: #0d6efd;
+}
 
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        .footer hr {
-            background-color: #fff;
-        }
-        h2{
-          color: rgb(54, 142, 87);;
-        }
   </style>
 </head>
 <body>
   
 
-<main>
-  
-  <nav class="navbar navbar-expand sticky-top navbar-custom">
-   <!-- <div class="container d-flex justify-content-between align-items-center"> -->
-    <div class="container-fluid d-flex justify-content-between align-items-center px-4">
-
-        <div> 
-            <a class="navbar-brand align-items-center" href="#"><img src="assets/race_recall_logo.webp" alt="Logo" height="40" class="me-2"></a>
-        </div>
-      
-       
-      <div>
-
- 
-    <!-- <ul class="navbar-nav flex-row gap-3 collapse navbar-collapse justify-content-end navbar-brand d-flex align-items-center"> -->
-      <ul class="navbar-nav flex-row gap-3 justify-content-end d-flex align-items-center">
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-            <button type="button" class="btn btn-success px-3 py-1">Login <i class="bi bi-arrow-right"></i></button>
+  <main>
     
-      </li>
-    </ul>
-  </div>
-      </div>
+        <nav class="navbar navbar-expand sticky-top navbar-custom">
+        
+          <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+
+              <div> 
+                  <a class="navbar-brand align-items-center" href="#"><img src="assets/race_recall_logo.webp" alt="Logo" height="40" class="me-2"></a>
+              </div>
+
+              <div>     
+                <ul class="navbar-nav flex-row gap-3 justify-content-end d-flex align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-success px-3 py-1">Login <i class="bi bi-arrow-right"></i></button>
+                  </li>
+                </ul>
+              </div>
+            
+            
+          </div>
+        </nav>
+
+    <!-- Carosuel -->
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/Banner1.svg" class="img-fluid responsive-rounded d-block w-100 mx-auto" alt="Responsive image">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Banner2.svg" class="img-fluid responsive-rounded d-block w-100 mx-auto" alt="Responsive image">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Banner3.svg" class="img-fluid rounded d-block w-100 mx-auto" alt="Responsive image">
+              </div>
+          </div>
+        
+        </div>
+  <!-- Search Bar -->
+        <div class="container text-center">
       
+          <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
 
-      <!-- Nav Links -->
-      <!-- <div class="collapse navbar-collapse justify-content-end navbar-brand d-flex align-items-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link px-3 py-1" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-success px-3 py-1">Login <i class="bi bi-arrow-right"></i></button>
-          </li>
-        </ul>
-      </div> -->
-    </div>
-  </nav>
+                <div class="search-bar mx-auto my-4">
 
-  
+                    <form class="d-flex responsive-rounded" role="search">
+                    
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    
+                          <button class="btn btn-outline-secondary" type="button">
+                            <i class="bi bi-search"></i>
+                          </button>
+                      
+                    </form>
+              
+            </div>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-        <img src="assets/Banner1.svg" class="img-fluid responsive-rounded d-block w-100 mx-auto" alt="Responsive image">
-        </div>
-        <div class="carousel-item">
-        <img src="assets/Banner2.svg" class="img-fluid responsive-rounded d-block w-100 mx-auto" alt="Responsive image">
-        </div>
-        <div class="carousel-item">
-        <img src="assets/Banner3.svg" class="img-fluid rounded d-block w-100 mx-auto" alt="Responsive image">
-        </div>
-    </div>
-    <!-- <button class="carousel-control-prev" type="" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control" type="" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button> -->
-    </div>
-
-    <div class="container text-center">
-  
-  <div class="row">
-    <div class="col-lg-2">
-   
-    </div>
-    <div class="col-lg-8">
-      <!-- <div class="search-bar"> -->
-        <div class="search-bar mx-auto my-4">
-
-            <form class="d-flex responsive-rounded" role="search">
-             
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            </div>
+            <div class="col-lg-2">
             
-                <button class="btn btn-outline-secondary" type="button">
-                  <i class="bi bi-search"></i>
-                </button>
-            
-            </form>
-       
-    </div>
-
-    </div>
-    <div class="col-lg-2">
-     
-    </div>
-  </div>
-</div>
+            </div>
+          </div>
+        </div>
 
 
-<!-- 
-card section -->
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="assets/472338422_929773649220957_16034345359633371_n.webp" class="card-img-top fixed-img responsive-rounded" alt="...">
-      <div class="card-body">
-        <h5><a href="#" class="card-link">Turag Active Dhaka 25k </a></h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Start  date : </b>February 14,2025</li>
-          <li class="list-group-item "><b>End  date : </b> February 14,2025</li>
-          <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-     
-      <img src="assets/457695449_913891020756163_8527299084994000405_n2.webp" class="card-img-top fixed-img responsive-rounded">
+  <!-- card section  -->
 
-      <div class="card-body">
-        <h5 class="card-title"> <a href="#" class="card-link">UCR HALF MARATHON 2024(Edition-03) </a></h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Start  date : </b>December 13,2025</li>
-          <li class="list-group-item "><b>End  date : </b> December 13,2025</li>
-          <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="assets/WhatsApp202024-12-01203.webp" class="card-img-top fixed-img responsive-rounded" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"> <a href="#" class="card-link">Jolshiri RunBangla Half Marathon 2024 </a></h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Start  date : </b>November 30,2025</li>
-          <li class="list-group-item "><b>End  date : </b> November 30,2025</li>
-          <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="assets/479882274_959707952894193_3300957411007847878_n4.webp" class="card-img-top fixed-img responsive-rounded" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"> <a href="#" class="card-link"> Dhaka 25k 2024 </a></h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Start  date : </b>March 8,2025</li>
-          <li class="list-group-item "><b>End  date : </b> March 8,2025</li>
-          <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="assets/472338422_929773649220957_16034345359633371_n.webp" class="card-img-top fixed-img responsive-rounded" alt="...">
+              <div class="card-body">
+                <h5><a href="#" class="card-link">Turag Active Dhaka 25k </a></h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Start  date : </b>February 14,2025</li>
+                  <li class="list-group-item "><b>End  date : </b> February 14,2025</li>
+                  <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/457695449_913891020756163_8527299084994000405_n2.webp" class="card-img-top fixed-img responsive-rounded">
+              <div class="card-body">
+                <h5 class="card-title"> <a href="#" class="card-link">UCR HALF MARATHON 2024(Edition-03) </a></h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Start  date : </b>December 13,2025</li>
+                  <li class="list-group-item "><b>End  date : </b> December 13,2025</li>
+                  <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/WhatsApp202024-12-01203.webp" class="card-img-top fixed-img responsive-rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> <a href="#" class="card-link">Jolshiri RunBangla Half Marathon 2024 </a></h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Start  date : </b>November 30,2025</li>
+                  <li class="list-group-item "><b>End  date : </b> November 30,2025</li>
+                  <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/479882274_959707952894193_3300957411007847878_n4.webp" class="card-img-top fixed-img responsive-rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> <a href="#" class="card-link"> Dhaka 25k 2024 </a></h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Start  date : </b>March 8,2025</li>
+                  <li class="list-group-item "><b>End  date : </b> March 8,2025</li>
+                  <li class="list-group-item"><b>Status :</b> <span class="border">online</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -279,76 +250,52 @@ card section -->
  
   
     
-    
-
-    <footer class="footer p-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Race Recall</h2>
-                    <div class="col-md-3">
-                      <h6>Follow Us</h6>
-                      <ul class="list-inline footer-links">
-                          <li class="list-inline-item">
-                            <a href="#">
-                                  <i class="fab fa-facebook"></i>
-                            </a>
-                            </li>
-                          <li class="list-inline-item">
-                            <a href="#">
-                                  <i class="fab fa-twitter"></i>
-                            </a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#">
-                                  <i class="fab fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#">
-                                  <i class="fab fa-linkedin"></i>
-                            </a>
-                          </li>
-                      </ul>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                    <h5>Company Links</h5>
+    <footer class="footer text-white py-5">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-md-4">
+                <h1 class="text">Race Recall</h1>
+                <h5>Recall Your Race</h5>
+                <p class="mt-4">Follow us on</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                    </li>
                     
-                </div>
-                <div class="col-md-4">
-                    <h5>Important Links</h5>
-                    <div class="col-md-6 text-end">
-                      <ul class="list-inline footer-links">
-                          <li class="list-inline-item">
-                              <a href="#" class="text-white">
-                                  Privacy Policy
-                              </a>
-                          </li>
-                          <li class="list-inline-item">
-                              <a href="#" class="text-white">
-                                  Terms of Service
-                              </a>
-                          </li>
-                          <li class="list-inline-item">
-                              <a href="#" class="text-white">
-                                  Sitemap
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-                </div>
-                
+                </ul>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2024 Your Website. All rights reserved.</p>
-                </div>
-               
+
+       
+            <div class="col-md-4">
+                <h5 class="mt-4">Company Links</h5>
+                <ul class="list-unstyled mt-4">
+                    <li><a href="#">About Us</a></li>
+                  
+                </ul>
+            </div>
+
+           
+            <div class="col-md-4">
+                <h5 class="mt-4">Important Links</h5>
+                <ul class="list-unstyled text-start mt-5">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Return & Refund Policy</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+
+        <hr class="border-light">
+
+        <div class="row align-items-left">
+            <div class="col-md-12 text-left">
+                <img src="assets/payment_banner_desktop.webp" alt="Payment Methods" class="img-fluid" style="max-height: 100px;">
+            </div>
+        </div>
+    </div>
+</footer>
+
 
  <script src="assets/js/bootstrap.bundle.min.js"></script>
  
