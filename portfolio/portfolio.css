@@ -3,6 +3,10 @@
     --padding:1rem;
 }
 *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
     box-sizing: border-box;
 }
 header{
@@ -17,8 +21,24 @@ header{
 header:hover{
     filter: saturate(2);
 }
+
+   
+    .navbar{
+      background-color: rgb(190, 233, 233);
+      display: flex;
+      justify-content: space-between;
+    }
+    .navlist ul{
+      display: flex;
+      gap: 20px;
+      padding-right: 20px;
+      margin: 10px;
+   
+      
+    }
+
 main{
-    background-color :#423f3f;
+    background-color :#785025;
     color: var(--text-color);
     padding: var(--padding);
 }
